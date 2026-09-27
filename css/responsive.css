@@ -1,0 +1,235 @@
+/* ============================================================================
+   AH PERFUMES — RESPONSIVE RULES
+   Mobile-first refinements layered over the base desktop styles.
+   Breakpoints: 1200 · 1024 · 900 · 768 · 560 · 400
+   ============================================================================ */
+
+/* ------- Large desktop tidy ------- */
+@media (max-width: 1200px) {
+  .footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ------- Tablet landscape / small laptop ------- */
+@media (max-width: 1024px) {
+  .nav__links {
+    gap: 26px;
+  }
+  .overview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chapter__grid {
+    min-height: unset;
+    gap: 40px;
+  }
+}
+
+/* ------- Show mobile menu / hide desktop nav ------- */
+@media (max-width: 900px) {
+  :root {
+    --nav-h: 66px;
+  }
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+  .nav__burger {
+    display: flex;
+  }
+
+  .intro__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .intro__figure {
+    order: -1;
+    max-width: 520px;
+  }
+
+  .pack__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .pack__stack {
+    max-width: 460px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .dna__stages {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 420px;
+  }
+  .dna__stage {
+    padding-top: 16px;
+  }
+}
+
+/* ------- Tablet portrait ------- */
+@media (max-width: 768px) {
+  .chapter__grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  /* keep visual first, text second on every chapter */
+  .chapter:nth-child(even) .chapter__visual {
+    order: -1;
+  }
+  .chapter__visual {
+    order: -1;
+    padding: 10px 0 0;
+  }
+  .chapter__bottle {
+    max-height: 58vh;
+  }
+  .chapter__box {
+    width: 34%;
+    right: 6%;
+  }
+  .chapter__body {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+  .chapter__index {
+    font-size: 40vw;
+  }
+
+  .benefits__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 460px;
+  }
+  .intro__stats {
+    gap: 30px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .marquee span,
+  .marquee span::after {
+    gap: 40px;
+  }
+}
+
+/* ------- Stronger hero scrim on portrait / phones for legibility ------- */
+@media (max-width: 768px) {
+  .hero__scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 10, 0.55) 0%,
+      rgba(8, 8, 10, 0.2) 34%,
+      rgba(8, 8, 10, 0.72) 78%,
+      rgba(8, 8, 10, 0.92) 100%
+    );
+  }
+  .hero__poster {
+    object-position: 70% center;
+  }
+}
+
+/* ------- Large phones ------- */
+@media (max-width: 560px) {
+  :root {
+    --gutter: 20px;
+  }
+
+  .hero__inner {
+    max-width: 100%;
+  }
+  .hero__actions {
+    gap: 12px;
+  }
+  .hero__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .overview__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .ov-card__body {
+    padding: 16px 14px 18px;
+  }
+  .ov-card__name {
+    font-size: 1.4rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .order__actions .btn {
+    flex: 1 1 100%;
+  }
+  .chapter__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .wa-float {
+    width: 54px;
+    height: 54px;
+  }
+  .wa-float svg {
+    width: 27px;
+    height: 27px;
+  }
+  .wa-float::after {
+    display: none;
+  } /* no room for tooltip on small screens */
+
+  .notes__row {
+    grid-template-columns: 78px 1fr;
+  }
+}
+
+/* ------- Small phones ------- */
+@media (max-width: 400px) {
+  .brand__word {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+  .overview__grid {
+    grid-template-columns: 1fr;
+  }
+  .intro__stat .n {
+    font-size: 2.1rem;
+  }
+}
+
+/* ------- Short landscape phones ------- */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    min-height: 620px;
+  }
+  .hero__scroll {
+    display: none;
+  }
+}
+
+/* ------- Reduce motion: neutralise transforms ------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

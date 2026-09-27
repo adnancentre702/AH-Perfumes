@@ -1,0 +1,28 @@
+{
+  "_comment": "Reference copy of product data. The live source of truth is js/products.js.",
+  "brand": {
+    "name": "AH Perfumes",
+    "location": "Sargodha, Pakistan",
+    "price": 2999,
+    "currency": "PKR",
+    "freeDelivery": true,
+    "deliveryArea": "Across Pakistan",
+    "whatsappNumber": "923000000000 (REPLACE)"
+  },
+  "products": [
+    {
+      "id": "khumra",
+      "name": "Khumra",
+      "type": "Oriental Amber",
+      "price": 2999
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "type": "Fresh Aromatic",
+      "price": 2999
+    },
+    { "id": "hillfiger", "name": "Hillfiger", "type": "Floral", "price": 2999 },
+    { "id": "wanted", "name": "Wanted", "type": "Woody Spicy", "price": 2999 }
+  ]
+}

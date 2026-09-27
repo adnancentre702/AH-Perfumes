@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- ==================== SEO ==================== -->
+    <title>AH Perfumes — Premium Perfumes in Sargodha, Pakistan</title>
+    <meta
+      name="description"
+      content="AH Perfumes — a premium fragrance house from Sargodha, Pakistan. Discover four signature perfumes: Khumra, Silver, Hillfiger and Wanted. Rs. 2,999 each with free home delivery. Order on WhatsApp."
+    />
+    <meta name="theme-color" content="#0c0c0e" />
+    <meta name="author" content="AH Perfumes" />
+    <link rel="canonical" href="https://example.com/" />
+    <!-- REPLACE with your live domain -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="AH Perfumes — Premium Perfumes in Pakistan"
+    />
+    <meta
+      property="og:description"
+      content="Four signature fragrances. Rs. 2,999 each · Free Home Delivery. Crafted in Sargodha, Pakistan."
+    />
+    <meta property="og:image" content="assets/hero/og-image.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:site_name" content="AH Perfumes" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AH Perfumes — Premium Perfumes in Pakistan"
+    />
+    <meta
+      name="twitter:description"
+      content="Four signature fragrances. Rs. 2,999 each · Free Home Delivery. Sargodha, Pakistan."
+    />
+    <meta name="twitter:image" content="assets/hero/og-image.jpg" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="assets/icons/favicon-64.png"
+      sizes="64x64"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+    <!-- Fonts (graceful fallback to system serif/sans if offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Structured data (SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "AH Perfumes",
+        "description": "Premium perfume house offering four signature fragrances.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sargodha",
+          "addressCountry": "PK"
+        },
+        "priceRange": "PKR 2999"
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#collection">Skip to collection</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ============================ NAV ============================ -->
+    <header class="nav" id="top">
+      <div class="nav__inner">
+        <a class="brand" href="#top" aria-label="AH Perfumes home">
+          <img
+            class="brand__logo"
+            src="assets/images/logo-white.png"
+            alt="AH Perfumes logo"
+            width="40"
+            height="40"
+          />
+          <span class="brand__word">AH Perfumes</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#collection">Collection</a>
+          <a href="#about">About</a>
+          <a href="#fragrance">Fragrance</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary nav__cta" href="#order">Order</a>
+
+        <button
+          class="nav__burger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile overlay menu -->
+    <div
+      class="menu-overlay"
+      id="menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu"
+    >
+      <nav class="menu-overlay__links" aria-label="Mobile">
+        <a href="#collection"><span class="num">01</span> Collection</a>
+        <a href="#about"><span class="num">02</span> About</a>
+        <a href="#fragrance"><span class="num">03</span> Fragrance</a>
+        <a href="#order"><span class="num">04</span> Order</a>
+        <a href="#contact"><span class="num">05</span> Contact</a>
+      </nav>
+      <div class="menu-overlay__foot">
+        <span data-location>Sargodha, Pakistan</span>
+        <a data-wa-general href="#" target="_blank" rel="noopener"
+          >Order on WhatsApp</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <!-- ============================ HERO ============================ -->
+      <section class="hero" id="hero" aria-label="AH Perfumes introduction">
+        <div class="hero__media">
+          <!-- Video-ready architecture: drop assets/hero/hero-video.mp4 to enable.
+             Poster stays visible until/unless a video is added & can autoplay. -->
+          <video
+            class="hero__video"
+            id="hero-video"
+            poster="assets/hero/hero-poster.jpg"
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-hidden="true"
+          >
+            <!-- <source src="assets/hero/hero-video.mp4" type="video/mp4" /> -->
+          </video>
+          <img
+            class="hero__poster"
+            src="assets/hero/hero-poster.jpg"
+            alt="Khumra by AH Perfumes bathed in golden light amid soft fragrant haze"
+          />
+        </div>
+
+        <canvas
+          class="hero__canvas"
+          id="hero-canvas"
+          aria-hidden="true"
+        ></canvas>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <div class="hero__inner">
+            <img
+              class="hero__logo"
+              src="assets/images/logo-white.png"
+              alt="AH Perfumes"
+              width="70"
+              height="70"
+            />
+            <h1 class="hero__title">
+              <span class="line">A scent that</span>
+              <span class="line"><em>defines</em> your</span>
+              <span class="line">presence.</span>
+            </h1>
+            <p class="hero__sub">
+              Four signature fragrances, composed for those who let their trail
+              speak first. Crafted and delivered from
+              <span data-location>Sargodha, Pakistan</span>.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="#collection"
+                >Explore the collection</a
+              >
+              <a
+                class="btn btn-wa"
+                data-wa-general
+                href="#"
+                target="_blank"
+                rel="noopener"
+                aria-label="Order on WhatsApp"
+              >
+                <!-- icon injected via CSS class fallback; text below -->
+                <span>Order on WhatsApp</span>
+              </a>
+            </div>
+            <p class="hero__delivery">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" />
+                <circle cx="7" cy="17" r="1.6" />
+                <circle cx="17.5" cy="17" r="1.6" />
+              </svg>
+              <span data-delivery>Free Home Delivery</span> ·
+              <span data-price>Rs. 2,999</span>
+            </p>
+          </div>
+        </div>
+
+        <a class="hero__scroll" href="#about" aria-label="Scroll to explore">
+          <span>Scroll</span><span class="bar" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ========================= MARQUEE ========================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Khumra</span><span>Silver</span><span>Hillfiger</span
+          ><span>Wanted</span> <span>Free Home Delivery</span
+          ><span>Rs. 2,999</span> <span>Khumra</span><span>Silver</span
+          ><span>Hillfiger</span><span>Wanted</span>
+          <span>Free Home Delivery</span><span>Rs. 2,999</span>
+        </div>
+      </div>
+
+      <!-- ========================= BRAND INTRO ========================= -->
+      <section class="intro section-pad on-light" id="about">
+        <div class="container">
+          <div class="intro__grid">
+            <div class="intro__body">
+              <span class="eyebrow" data-reveal="fade">The House</span>
+              <h2 class="section-title" data-reveal>
+                Fragrance as a form<br />of
+                <span class="serif-accent">self-expression.</span>
+              </h2>
+              <p class="lead" data-reveal>
+                AH Perfumes is an independent fragrance house from Sargodha,
+                Pakistan. We believe a scent is the most personal thing you wear
+                — invisible, yet unforgettable. Each of our four compositions is
+                built around a distinct mood, so you can find the one that feels
+                unmistakably yours.
+              </p>
+              <div class="intro__stats" data-reveal-stagger>
+                <div class="intro__stat">
+                  <div class="n">04</div>
+                  <div class="l">Signature scents</div>
+                </div>
+                <div class="intro__stat">
+                  <div class="n" data-price>Rs. 2,999</div>
+                  <div class="l">One honest price</div>
+                </div>
+                <div class="intro__stat">
+                  <div class="n">Free</div>
+                  <div class="l" data-delivery>Free Home Delivery</div>
+                </div>
+              </div>
+            </div>
+
+            <figure class="intro__figure" data-reveal="right">
+              <picture>
+                <source
+                  srcset="assets/images/perfume-01-box.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/perfume-01-box.jpg"
+                  data-mask
+                  alt="Khumra by AH Perfumes presented in a luxury black gift box"
+                  width="928"
+                  height="1134"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption class="tag">
+                Presented in signature packaging
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== COLLECTION INTRO ===================== -->
+      <section class="collection-intro section-pad on-dark" id="collection">
+        <div class="container">
+          <span class="eyebrow center" data-reveal="fade">The Collection</span>
+          <h2 class="section-title" data-reveal>
+            Four scents.<br />Four states of mind.
+          </h2>
+          <p class="lead" data-reveal>
+            Explore each fragrance as its own chapter — the mood, the notes and
+            the trail it leaves behind.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================== PERFUME CHAPTERS (rendered) =================== -->
+      <div id="chapters" aria-label="Perfume collection">
+        <!-- injected from products.js -->
+      </div>
+
+      <!-- ===================== FRAGRANCE DNA ===================== -->
+      <section
+        class="dna section-pad on-dark"
+        id="fragrance"
+        aria-label="How a fragrance unfolds"
+      >
+        <canvas class="dna__canvas" id="dna-canvas" aria-hidden="true"></canvas>
+        <div class="container dna__inner">
+          <span class="eyebrow center" data-reveal="fade"
+            >The Fragrance Pyramid</span
+          >
+          <h2 class="section-title" data-reveal>
+            How a scent unfolds<br />on your skin.
+          </h2>
+          <div class="dna__stages">
+            <div class="dna__stage" data-stage="0">
+              <div class="k">Top</div>
+              <div class="v">The first impression</div>
+            </div>
+            <div class="dna__stage" data-stage="1">
+              <div class="k">Heart</div>
+              <div class="v">The character</div>
+            </div>
+            <div class="dna__stage" data-stage="2">
+              <div class="k">Base</div>
+              <div class="v">The lasting trail</div>
+            </div>
+          </div>
+          <p class="dna__hint" data-reveal="fade">
+            Scroll to watch the notes settle
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== PACKAGING REVEAL ===================== -->
+      <section class="pack section-pad on-light" id="packaging">
+        <div class="container">
+          <div class="pack__grid">
+            <div class="pack__stack" data-reveal="left" aria-hidden="false">
+              <picture>
+                <source
+                  srcset="assets/images/perfume-04-box.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="p-box"
+                  src="assets/images/perfume-04-box.jpg"
+                  alt="Wanted by AH Perfumes in its gift box"
+                  width="896"
+                  height="1200"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="assets/images/perfume-02-bottle.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="p-bottle"
+                  src="assets/images/perfume-02-bottle.jpg"
+                  alt="Silver by AH Perfumes bottle"
+                  width="896"
+                  height="1200"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="pack__body">
+              <span class="eyebrow" data-reveal="fade">Unboxing</span>
+              <h2 class="section-title" data-reveal>
+                Made to be gifted,<br />made to be kept.
+              </h2>
+              <p class="lead" data-reveal>
+                Every AH Perfume arrives cradled in a satin-lined presentation
+                box — a considered detail that makes each bottle feel like the
+                occasion it was bought for.
+              </p>
+              <div
+                class="chapter__actions"
+                data-reveal
+                style="margin-top: 32px"
+              >
+                <a
+                  class="btn btn-wa"
+                  data-wa-general
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span>Order on WhatsApp</span>
+                </a>
+                <a class="btn btn-dark" href="#order">See pricing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== COLLECTION OVERVIEW ===================== -->
+      <section class="overview section-pad on-dark">
+        <div class="container">
+          <div class="overview__head">
+            <div>
+              <span class="eyebrow" data-reveal="fade">Browse All</span>
+              <h2 class="section-title" data-reveal>
+                The complete<br />collection.
+              </h2>
+            </div>
+            <p class="lead" data-reveal="fade">
+              Tap any bottle to jump straight to its story.
+            </p>
+          </div>
+          <div class="overview__grid" id="overview-grid" data-reveal-stagger>
+            <!-- injected -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== BENEFITS ===================== -->
+      <section class="benefits section-pad on-light">
+        <div class="container">
+          <span class="eyebrow" data-reveal="fade">Why AH Perfumes</span>
+          <h2 class="section-title" data-reveal>Simple promises,<br />kept.</h2>
+          <div class="benefits__grid" data-reveal-stagger>
+            <div class="benefit">
+              <svg class="benefit__ico" viewBox="0 0 24 24">
+                <path d="M3 7h11v8H3z" />
+                <path d="M14 10h4l3 3v2h-7z" />
+                <circle cx="7" cy="17" r="1.8" />
+                <circle cx="17.5" cy="17" r="1.8" />
+              </svg>
+              <h3 data-delivery>Free Home Delivery</h3>
+              <p>Your fragrance delivered to your door at no extra cost.</p>
+            </div>
+            <div class="benefit">
+              <svg class="benefit__ico" viewBox="0 0 24 24">
+                <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+              <h3>One Honest Price</h3>
+              <p>
+                Every scent is <span data-price>Rs. 2,999</span> — no gimmicks,
+                no fake discounts.
+              </p>
+            </div>
+            <div class="benefit">
+              <svg class="benefit__ico" viewBox="0 0 24 24">
+                <path d="M20 4L4 12l6 2 2 6z" />
+                <path d="M20 4l-8 10" />
+              </svg>
+              <h3>Order in Seconds</h3>
+              <p>
+                Message us on WhatsApp and we'll handle the rest, personally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ORDER CTA ===================== -->
+      <section class="order section-pad" id="order">
+        <div class="order__bg" aria-hidden="true"></div>
+        <div class="container order__inner">
+          <span class="eyebrow center" data-reveal="fade"
+            >Your Signature Awaits</span
+          >
+          <h2 class="order__title" data-reveal>
+            Ready to find<br />your signature scent?
+          </h2>
+          <div class="order__price" data-reveal="fade">
+            <span class="amt" data-price>Rs. 2,999</span>
+          </div>
+          <p class="order__delivery" data-reveal="fade">
+            <span data-delivery>Free Home Delivery</span>
+          </p>
+          <div class="order__actions" data-reveal>
+            <a
+              class="btn btn-wa"
+              data-wa-general
+              href="#"
+              target="_blank"
+              rel="noopener"
+              aria-label="Order on WhatsApp"
+            >
+              <span>Order on WhatsApp</span>
+            </a>
+            <a class="btn btn-ghost" href="#collection"
+              >Browse the collection</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT / OWNERS ===================== -->
+      <section class="contact section-pad on-dark" id="contact">
+        <div class="container">
+          <div class="contact__grid">
+            <div class="contact__intro">
+              <span class="eyebrow" data-reveal="fade">Contact</span>
+              <h2 class="section-title" data-reveal>
+                Let's talk<br />fragrance.
+              </h2>
+              <p class="lead" data-reveal>
+                Have a question, or ready to order? Reach out on WhatsApp or
+                call an owner directly — we'd love to help you find your scent.
+              </p>
+              <p class="contact__loc" data-reveal="fade">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+                <span data-location>Sargodha, Pakistan</span>
+              </p>
+              <div style="margin-top: 28px" data-reveal>
+                <a
+                  class="btn btn-wa"
+                  data-wa-general
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span>Message on WhatsApp</span>
+                </a>
+              </div>
+              <div
+                class="social-row"
+                id="contact-social"
+                data-reveal="fade"
+                aria-label="Social media"
+              ></div>
+            </div>
+
+            <div class="owners" id="owners">
+              <!-- injected from products.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img
+              class="brand__logo"
+              src="assets/images/logo-white.png"
+              alt="AH Perfumes logo"
+              width="54"
+              height="54"
+            />
+            <p>
+              AH Perfumes — a premium fragrance house crafting signature scents
+              from <span data-location>Sargodha, Pakistan</span>. Four perfumes,
+              one honest price, delivered to your door.
+            </p>
+            <p class="contact__loc" style="margin-top: 18px">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <span data-location>Sargodha, Pakistan</span>
+            </p>
+          </div>
+
+          <div>
+            <h4>Collection</h4>
+            <ul>
+              <li><a href="#perfume-khumra">Khumra</a></li>
+              <li><a href="#perfume-silver">Silver</a></li>
+              <li><a href="#perfume-hillfiger">Hillfiger</a></li>
+              <li><a href="#perfume-wanted">Wanted</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#fragrance">Fragrance</a></li>
+              <li><a href="#order">Order</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Get in touch</h4>
+            <address>
+              <a data-wa-general href="#" target="_blank" rel="noopener"
+                >Order on WhatsApp</a
+              ><br />
+              <span data-location>Sargodha, Pakistan</span>
+            </address>
+            <div
+              id="social-links"
+              style="
+                margin-top: 16px;
+                font-size: 13px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                color: var(--gold-soft);
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <span
+            >© <span data-year>2026</span> <span data-brand>AH Perfumes</span>.
+            All rights reserved.</span
+          >
+          <span>Crafted in <span data-location>Sargodha, Pakistan</span></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================== FLOATING WHATSAPP ===================== -->
+    <a
+      class="wa-float"
+      data-wa-general
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Order on WhatsApp"
+      data-label="Order on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        />
+      </svg>
+    </a>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <!-- Vendored libraries (no CDN required) -->
+    <script src="js/vendor/three.min.js" defer></script>
+    <script src="js/vendor/gsap.min.js" defer></script>
+    <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+    <!-- App -->
+    <script src="js/products.js" defer></script>
+    <script src="js/interactions.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/three-scene.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
